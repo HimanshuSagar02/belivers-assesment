@@ -1,4 +1,7 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
+import { Link } from 'react-router-dom';
+// from 'react';
 import styles from './Navbar.module.css';
 
 import logo from '../../assets/logo.png';
@@ -15,7 +18,7 @@ export default function Navbar() {
       <nav className={styles.webNav}>
         <a href="/" data-discover="true">Home</a>
         <a href="https://drzainabvora.com/about" target="_blank" rel="noreferrer">About Dr. ZV</a>
-        <a href="/corebtr-offline" data-discover="true">CoreBTR Offline</a>
+        <Link to="/corebtr-offline" data-discover="true">CoreBTR Offline</Link>
         <a href="/corebtr-bootcamp" aria-current="page" className={styles.active} data-discover="true">CoreBTR Bootcamp</a>
 
         <div className={styles.dropdownContainer}>
@@ -47,7 +50,7 @@ export default function Navbar() {
         </div>
 
         <a href="/blogs" data-discover="true">Blogs</a>
-        <a href="/login" className={styles.loginSignupCta}>Login | Signup</a>
+        <Link to="/login" className={styles.loginSignupCta}>Login | Signup</Link>
       </nav>
 
       <div className={styles.hamburger}>

@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
+//, { useState } from 'react';
 
 export default function LandingPage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -14,7 +17,7 @@ export default function LandingPage() {
         <nav className="web-nav">
           <a className="" href="/" data-discover="true">Home</a>
           <a className="" href="#" target="_blank" rel="noreferrer">About Dr. ZV</a>
-          <a className="" href="/corebtr-offline" data-discover="true">CoreBTR Offline</a>
+          <Link className="" to="/corebtr-offline" data-discover="true">CoreBTR Offline</Link>
           <a aria-current="page" className="active" href="/corebtr-bootcamp" data-discover="true">CoreBTR Bootcamp</a>
           <div className="dropdown-container">
             <button className="dropdown-trigger">
@@ -41,7 +44,7 @@ export default function LandingPage() {
             </button>
           </div>
           <a className="" href="/blogs" data-discover="true">Blogs</a>
-          <a className="login-signup-cta" href="/login">Login | Signup</a>
+          <Link className="login-signup-cta" to="/login">Login | Signup</Link>
         </nav>
         <div className="hamburger">
           <button className="hamburger-btn" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
@@ -75,7 +78,7 @@ export default function LandingPage() {
               </button>
             </div>
             <a className="" href="#" data-discover="true">Blogs</a>
-            <a className="login-signup-cta" href="/login">Login | Signup</a>
+            <Link className="login-signup-cta" to="/login">Login | Signup</Link>
           </nav>
         )}
       </header>
@@ -510,7 +513,7 @@ export default function LandingPage() {
             <ul className="footer-links">
               <li><a className="" href="/workbooks" data-discover="true"> Workbooks &amp; Notes</a></li>
               <li><a className="" href="/pyqs-book" data-discover="true"> PYQs Book</a></li>
-              <li><a className="" href="/corebtr-offline" data-discover="true">CoreBTR Offline</a></li>
+              <li><Link className="" to="/corebtr-offline" data-discover="true">CoreBTR Offline</Link></li>
               <li><a aria-current="page" className="active" href="/corebtr-bootcamp" data-discover="true">CoreBTR Bootcamp</a></li>
             </ul>
           </div>

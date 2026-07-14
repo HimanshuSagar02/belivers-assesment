@@ -1,0 +1,107 @@
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 2rem;
+  background-color: #000;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.navbarLogo {
+  display: flex;
+  align-items: center;
+}
+
+.navbarLogo img {
+  display: block;
+  height: 40px;
+  width: auto;
+}
+
+.webNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.webNav > a,
+.webNav > .dropdownContainer {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.webNav > a {
+  padding: 0.35rem 0;
+}
+
+.active {
+  color: #ffb800;
+}
+
+.dropdownContainer {
+  position: relative;
+}
+
+.dropdownTrigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dropdownText {
+  display: inline-block;
+}
+
+.arrowIcon {
+  width: 0.9rem;
+  height: 0.9rem;
+  display: inline-block;
+  fill: currentColor;
+}
+
+.loginSignupCta {
+  background-color: #ffb800;
+  color: #000;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburgerBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+@media (max-width: 1120px) {
+  .webNav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

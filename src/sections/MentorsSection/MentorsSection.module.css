@@ -1,0 +1,117 @@
+.mentorsSection {
+  padding: 4rem 2rem;
+  
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.header {
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.sectionLabel {
+  color: var(--color-accent-orange);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.mainTitle {
+  font-size: 2rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.highlightText {
+  color: var(--color-primary-blue);
+}
+
+.headerDesc {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+
+.mentorCard {
+  background-color: var(--color-white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.mentorCard:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-accent-orange);
+  box-shadow: 0 10px 25px rgba(243, 156, 18, 0.1);
+}
+
+.imageWrapper {
+  width: 100%;
+}
+
+.mentorImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 1.5rem;
+  background-color: var(--color-white);
+  flex: 1; 
+}
+
+.accentLine {
+  width: 30px;
+  height: 3px;
+  background-color: var(--color-primary-dark);
+  margin-bottom: 1rem;
+}
+
+.mentorName {
+  font-size: 1.2rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 0.8rem;
+  font-weight: 800;
+}
+
+.mentorDesc {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+
+@media (max-width: 968px) {
+  .cardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .cardsGrid {
+    grid-template-columns: 1fr;
+  }
+}

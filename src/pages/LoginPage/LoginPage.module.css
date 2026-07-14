@@ -1,0 +1,197 @@
+.loginContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0f0f0f;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+.formSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.formWrapper {
+  width: 100%;
+  max-width: 400px;
+}
+
+.logoRow {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.logoLink {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.logo sup {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  color: #a1a1aa;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 1rem;
+}
+
+.codeColumn {
+  width: 140px;
+}
+
+.phoneColumn {
+  flex: 1;
+}
+
+.codeColumn label,
+.phoneColumn label {
+  display: block;
+  font-size: 0.8rem;
+  color: #e4e4e7;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.selectInput,
+.textInput {
+  width: 100%;
+  background-color: #1f1f22;
+  border: 1px solid #3f3f46;
+  color: white;
+  padding: 0.85rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.selectInput:focus,
+.textInput:focus {
+  border-color: #4f46e5;
+}
+
+.checkboxGroup {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.checkbox {
+  margin-top: 0.2rem;
+  accent-color: #4f46e5;
+  width: 16px;
+  height: 16px;
+  background-color: #1f1f22;
+  border: none;
+}
+
+.checkboxGroup label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+
+.checkTitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #e4e4e7;
+}
+
+.checkDesc {
+  font-size: 0.75rem;
+  color: #a1a1aa;
+  line-height: 1.4;
+}
+
+.submitBtn {
+  background-color: #4338ca;
+  color: #818cf8;
+  border: none;
+  border-radius: 6px;
+  padding: 0.9rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.2s ease;
+}
+
+.submitBtn:hover {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.footerLinks {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #a1a1aa;
+  line-height: 2;
+}
+
+.footerLinks a {
+  color: #818cf8;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+
+.footerLinks a:hover {
+  color: #a5b4fc;
+}
+
+.imageSection {
+  flex: 1.2;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.sketchImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+@media (max-width: 900px) {
+  .imageSection {
+    display: none;
+  }
+}
